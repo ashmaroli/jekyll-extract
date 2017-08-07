@@ -1,6 +1,6 @@
 # Jekyll Extract
 
-A plugin to easily copy files and directories from a theme-gem to your site's source directory.
+A plugin that adds a new Jekyll command to easily copy files and directories from a theme-gem to your site's source directory.
 
 
 ## Installation
@@ -19,9 +19,9 @@ end
 
 ## Usage
 
-`jekyll-extract` command is meant to simplify accessing a Jekyll theme-gem and copying the files you wish to customize, to your site's configured source directory.
+`jekyll extract` command is meant to simplify accessing a Jekyll theme-gem and copying the files you wish to customize, to your site's configured source directory.
 
-Run `jekyll-extract` with a `--list-all` switch to get an idea of all bundled files:
+Run `jekyll extract` with a `--list-all` switch to get an idea about all files bundled in the current theme:
 
 ```sh
 # demo using Minima v2.1.1
@@ -51,7 +51,7 @@ $ bundle exec jekyll extract --list-all
                    * _sass/minima.scss
 ```
 
-To copy an entire directory over to the source directory (henceforth referenced by the phrase "extract to source"), pass the directory path relative to the gem, as argument:
+To copy an entire directory over to the source directory (henceforth referenced by the phrase *"extract to source"*), pass the directory-path, relative to the gem, as the argument:
 
 ```sh
 $ bundle exec jekyll extract _layouts
@@ -70,7 +70,7 @@ To check what files are bundled in a particular directory, run the command with 
 
 ```sh
 $ bundle exec jekyll extract _layouts --show
-
+[...]
            Listing: Contents of '_layouts' in theme gem...
                      * _layouts/default.html
                      * _layouts/home.html
@@ -78,12 +78,12 @@ $ bundle exec jekyll extract _layouts --show
                      * _layouts/post.html
 
 ```
-Now, two extract just a couple of the layouts from the list, run:
+Now, to extract just a couple of layouts from the list, run:
 
 ```sh
 $ bundle exec jekyll extract _layouts/default.html _layouts/page.html
 ```
-The above command will extract the two files to your site.
+The above command will extract these two files to your site's source directory.
 
 
 ## Contributing
