@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Ashwin Maroli"]
   spec.email         = ["ashmaroli@gmail.com"]
 
-  spec.summary       = "Extract theme-gem contents to source directory."
+  spec.summary       = "A Jekyll command to easily copy theme-gem contents to source directory."
   spec.homepage      = "https://github.com/ashmaroli/jekyll-extract"
   spec.license       = "MIT"
 
